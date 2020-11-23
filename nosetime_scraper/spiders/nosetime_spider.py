@@ -9,23 +9,11 @@ class NosetimeScraper(scrapy.Spider):
     name = "nosetime"
 
     # urls = ['/pinpai/4-c.html']
-    # urls = ['/pinpai/2-a.html', '/pinpai/3-b.html','/pinpai/4-c.html',
-    #        '/pinpai/5-d.html','/pinpai/6-e.html','/pinpai/7-f.html',
-    #        '/pinpai/8-g.html','/pinpai/9-h.html','/pinpai/10-i.html',
-    #        '/pinpai/11-j.html','/pinpai/12-k.html','/pinpai/13-i.html',
-    #        '/pinpai/14-m.html','/pinpai/15-n.html','/pinpai/16-o.html',
-    #        '/pinpai/17-p.html','/pinpai/18-q.html','/pinpai/19-r.html',
-    #        '/pinpai/20-s.html','/pinpai/21-t.html','/pinpai/22-u.html',
-    #        '/pinpai/23-v.html','/pinpai/24-w.html','/pinpai/25-x.html',
-    #        '/pinpai/26-y.html','/pinpai/27-z.html']
-    # urls = ['/pinpai/10036120-yuguoboshi-hugo-boss.html',
-    #         '/pinpai/10094164-kedi-coty.html',
-    #         '/pinpai/10021965-gaotiye-jean-paul-gaultier.html',
-    #         '/pinpai/10088596-laerfu-laolun-ralph-lauren.html']
 
-    def __init__(self, urls=None, database=None, *args, **kwargs):
+
+    def __init__(self, url=None, database=None, *args, **kwargs):
         super(NosetimeScraper, self).__init__(*args, **kwargs)
-        self.start_urls = ['https://www.nosetime.com' + url for url in urls]
+        self.start_urls = ['https://www.nosetime.com' + url]
 
     def parse(self, response):
         # proceed to other pages of the listings
