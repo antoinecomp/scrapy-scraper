@@ -9,9 +9,12 @@
 from bs4 import BeautifulSoup
 import re
 import pymongo
+import requests
+
+base_url = 'https://www.nosetime.com'
 
 
-class NosetimeScraperPipeline:
+class Pipeline:
 
     def __init__(self):
         pass
@@ -19,7 +22,136 @@ class NosetimeScraperPipeline:
     def process_item(self, item, spider):
         return item
 
-    def process_response(self, response):
+    def process_url(self, url, headers):
+        product_id = url.split("/")[-1].split("-")[0]
+        json_doc = requests.get(
+            f"https://www.nosetime.com/app/item.php?id={product_id}",
+            headers=headers,
+        ).json()
+
+        perfume = {}
+        try:
+            perfume["id"] = json_doc["id"]
+        except KeyError:
+            return None
+        try:
+            perfume["item_name_en"] = json_doc["enname"]
+        except KeyError:
+            pass
+        try:
+            perfume["item_name_cn"] = json_doc["cnname"]
+        except KeyError:
+            pass
+        try:
+            perfume["item_info"] = json_doc["intro"]
+        except KeyError:
+            pass
+        try:
+            perfume["item_score"] = json_doc["isscore"]
+        except KeyError:
+            pass
+        try:
+            perfume["number_reviews"] = json_doc["istotal"]
+        except KeyError:
+            pass
+        try:
+            perfume["brand"] = json_doc["brand"]
+        except KeyError:
+            pass
+        try:
+            perfume["attrib"] = json_doc["attrib"]
+        except KeyError:
+            pass
+        try:
+            perfume["top"] = json_doc["top"]
+        except KeyError:
+            pass
+        try:
+            perfume["middle"] = json_doc["middle"]
+        except KeyError:
+            pass
+        try:
+            perfume['base'] = json_doc["base"]
+        except KeyError:
+            pass
+        try:
+            perfume["mainodor"] = json_doc["mainodor"]
+        except KeyError:
+            pass
+        try:
+            perfume["perfumer"] = json_doc["perfumer"]
+        except KeyError:
+            pass
+
+        response_unicode = requests.get(base_url + url, headers=headers)
+        soup = BeautifulSoup(response_unicode.text, 'html.parser')
+
+        try:
+            perfume["number_five"] = soup.find_all('div', {'class': 'nows'})[0].text
+        except IndexError:
+            pass
+        try:
+            perfume["number_four"] = soup.find_all('div', {'class': 'nows'})[1].text
+        except IndexError:
+            pass
+        try:
+            perfume["number_three"] = soup.find_all('div', {'class': 'nows'})[2].text
+        except IndexError:
+            pass
+        try:
+            perfume["number_two"] = soup.find_all('div', {'class': 'nows'})[3].text
+        except IndexError:
+            pass
+        try:
+            perfume["number_one"] = soup.find_all('div', {'class': 'nows'})[4].text
+        except IndexError:
+            pass
+
+        perfume["short_comment"] = []
+        for pseudo_rate, comment in zip(soup.find_all('div', {'class': "author"}),
+                                        soup.find_all('div', {'class': "hfshow1"})):
+            d = {}
+            d["name"] = pseudo_rate.text
+            d["comment"] = comment.text
+            try:
+                d["rating"] = pseudo_rate.span["class"][1]
+            except:
+                pass
+            perfume["short_comment"].append(d)
+
+        perfume["long_comment"] = []
+        long_comment_html = soup.find('li', {'id': 'itemdiscuss'})
+        try:
+            for pseudo_rate, comment, time, fav_cnt in zip(long_comment_html.find_all('div', {'class': "comment"}),
+                                                           long_comment_html.find_all('div', {'class': "hfshow"}),
+                                                           long_comment_html.find_all('span',
+                                                                                      {'class': "publish-time"}),
+                                                           long_comment_html.find_all('span', {'class': "fav_cnt"})):
+                d = {}
+                d["name"] = pseudo_rate.text
+                d["comment"] = comment.text
+                d["publish-time"] = time.text
+                try:
+                    d["fav_cnt"] = fav_cnt.text
+                except:
+                    pass
+                try:
+                    d["rating"] = pseudo_rate.span["class"][1]
+                except:
+                    pass
+                perfume["long_comment"].append(d)
+        except:
+            pass
+
+        try:
+            perfume["img_src"] = soup.find('img', {'class': 'noxx'})["src"]
+        except:
+            pass
+            # perfume["url_image"]=soup.find('img',{'class':'noxx'})
+
+        return perfume
+
+    def process_response_respectfully(self, response):
         perfume = {}
         response_body = response.body.decode('utf-8')
         soup = BeautifulSoup(response_body, "html.parser")
@@ -137,9 +269,8 @@ class NosetimeScraperPipeline:
             pass
         return perfume
 
-    def datsave_in_mongo(self, perfume):
-        client = pymongo.MongoClient(
-            "mongodb+srv://USER:PASSWORD@cluster0.n2hnd.mongodb.net/fragrance_db?retryWrites=true&w=majority")
-        db = client.test
-        fragrance = db.fragrance_db2
-        fragrance.insert_one(perfume)
+    def save_in_mongo(self, url, db, collection, perfume):
+        client = pymongo.MongoClient(url)
+        db = client[db]
+        collection = db[collection]
+        collection.insert_one(perfume)
