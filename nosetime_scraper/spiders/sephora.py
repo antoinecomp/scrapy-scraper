@@ -65,7 +65,7 @@ class SephoraSpider(scrapy.Spider):
         decoded.insert(4, ('filter.q0', 'id:eq:' + product_id))
         decoded.insert(12, ('filter.q0', 'id:eq:' + product_id))
         decoded.insert(25, ('filter.q0', 'id:eq:' + product_id))
-        response = requests.get(f"{self.url_api}{urlencode(decoded)}").text
+        response = requests.get(f"{}{}".format(self.url_api,urlencode(decoded))).text
 
         data = json.loads(re.search(r"\((.*)\)", response).group(1))
         if data["BatchedResults"]["q0"]["Results"][0]["Brand"]['Name'] == 'BURBERRY':
