@@ -1,0 +1,1475 @@
+2020-11-24 18:11:38 [scrapy.utils.log] INFO: Scrapy 2.4.0 started (bot: nosetime_scraper)
+2020-11-24 18:11:38 [scrapy.utils.log] INFO: Versions: lxml 4.6.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.6.7 (v3.6.7:6ec5cf24b7, Oct 20 2018, 13:35:33) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 3.2.1, Platform Windows-10-10.0.19041-SP0
+2020-11-24 18:11:38 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-11-24 18:11:38 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'nosetime_scraper',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 7,
+ 'NEWSPIDER_MODULE': 'nosetime_scraper.spiders',
+ 'SPIDER_MODULES': ['nosetime_scraper.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) '
+               'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 '
+               'Safari/537.36'}
+2020-11-24 18:11:38 [scrapy.extensions.telnet] INFO: Telnet Password: 75651414f7103574
+2020-11-24 18:11:38 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-11-24 18:11:39 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-11-24 18:11:39 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-11-24 18:11:39 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-11-24 18:11:39 [scrapy.core.engine] INFO: Spider opened
+2020-11-24 18:11:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-11-24 18:11:39 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-11-24 18:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/pinpai/4-c.html> (referer: None)
+2020-11-24 18:11:40 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:11:44 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /app/item.php?id=10047004 HTTP/1.1" 200 None
+2020-11-24 18:11:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:11:45 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /pinpai/10047004-cyzone.html HTTP/1.1" 200 None
+2020-11-24 18:11:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html> (referer: https://www.nosetime.com/pinpai/4-c.html)
+2020-11-24 18:11:49 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:11:50 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /app/item.php?id=440460 HTTP/1.1" 200 None
+2020-11-24 18:11:50 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:11:51 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /xiangshui/440460-xiangnaier-xiehou-huangxiehou-chanel.html HTTP/1.1" 200 None
+2020-11-24 18:11:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/pinpai/10047004-cyzone.html> (referer: https://www.nosetime.com/pinpai/4-c.html)
+2020-11-24 18:11:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:12:00 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /app/item.php?id=821479 HTTP/1.1" 200 None
+2020-11-24 18:12:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:12:01 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /xiangshui/821479-cyzone-forze.html HTTP/1.1" 200 None
+2020-11-24 18:12:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/440460-xiangnaier-xiehou-huangxiehou-chanel.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+2020-11-24 18:12:09 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/440460-xiangnaier-xiehou-huangxiehou-chanel.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:12:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/821479-cyzone-forze.html> (referer: https://www.nosetime.com/pinpai/10047004-cyzone.html)
+2020-11-24 18:12:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/821479-cyzone-forze.html> (referer: https://www.nosetime.com/pinpai/10047004-cyzone.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:12:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/167347-bleu-de-chanel-eau-de-parfum.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+2020-11-24 18:12:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/167347-bleu-de-chanel-eau-de-parfum.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:12:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/256912-chanel-no-5-l-eau.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+2020-11-24 18:12:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/256912-chanel-no-5-l-eau.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:12:39 [scrapy.extensions.logstats] INFO: Crawled 7 pages (at 7 pages/min), scraped 0 items (at 0 items/min)
+2020-11-24 18:12:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/750128-xiangnaier-danxiangjing-chanel.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+2020-11-24 18:12:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/750128-xiangnaier-danxiangjing-chanel.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:12:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/777924-xiangnaier-luxiehou-chanel-chance.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+2020-11-24 18:12:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/777924-xiangnaier-luxiehou-chanel-chance.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:13:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/328164-xiangnaier-fenxiehou-chanel-chance.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+2020-11-24 18:13:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/328164-xiangnaier-fenxiehou-chanel-chance.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:13:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/595834-chanel-gabrielle.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+2020-11-24 18:13:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/595834-chanel-gabrielle.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:13:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/997029-xiangnaier-5hao-chanel-n.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+2020-11-24 18:13:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/997029-xiangnaier-5hao-chanel-n.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:13:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/298678-xiangnaier-kekexiaojie-chanel-coco.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+2020-11-24 18:13:23 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/298678-xiangnaier-kekexiaojie-chanel-coco.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:13:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/176433-xiangnaier-weilan-chanel-bleu.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+2020-11-24 18:13:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/176433-xiangnaier-weilan-chanel-bleu.html> (referer: https://www.nosetime.com/pinpai/10049142-xiangnaier-chanel.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:13:39 [scrapy.extensions.logstats] INFO: Crawled 14 pages (at 7 pages/min), scraped 0 items (at 0 items/min)
+2020-11-24 18:13:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/pinpai/10062809-meizhibenzhi-essence-of-beauty.html> (referer: https://www.nosetime.com/pinpai/4-c.html)
+2020-11-24 18:13:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:13:43 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /app/item.php?id=877199 HTTP/1.1" 200 None
+2020-11-24 18:13:43 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:13:45 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /xiangshui/877199-japanese-garden-cvs-essence-of-beauty.html HTTP/1.1" 200 None
+2020-11-24 18:13:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/pinpai/10021729-cussons.html> (referer: https://www.nosetime.com/pinpai/4-c.html)
+2020-11-24 18:13:49 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:13:51 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /app/item.php?id=475486 HTTP/1.1" 200 None
+2020-11-24 18:13:51 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:13:52 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /xiangshui/475486-imperial-leather.html HTTP/1.1" 200 None
+2020-11-24 18:13:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/877199-japanese-garden-cvs-essence-of-beauty.html> (referer: https://www.nosetime.com/pinpai/10062809-meizhibenzhi-essence-of-beauty.html)
+2020-11-24 18:13:59 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/877199-japanese-garden-cvs-essence-of-beauty.html> (referer: https://www.nosetime.com/pinpai/10062809-meizhibenzhi-essence-of-beauty.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:14:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/475486-imperial-leather.html> (referer: https://www.nosetime.com/pinpai/10021729-cussons.html)
+2020-11-24 18:14:09 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/475486-imperial-leather.html> (referer: https://www.nosetime.com/pinpai/10021729-cussons.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:14:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/400715-meizhibenzhi-essence-beauty-forever.html> (referer: https://www.nosetime.com/pinpai/10062809-meizhibenzhi-essence-of-beauty.html)
+2020-11-24 18:14:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/400715-meizhibenzhi-essence-beauty-forever.html> (referer: https://www.nosetime.com/pinpai/10062809-meizhibenzhi-essence-of-beauty.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:14:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/990230-meizhibenzhi-essence-beauty-tropics.html> (referer: https://www.nosetime.com/pinpai/10062809-meizhibenzhi-essence-of-beauty.html)
+2020-11-24 18:14:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/990230-meizhibenzhi-essence-beauty-tropics.html> (referer: https://www.nosetime.com/pinpai/10062809-meizhibenzhi-essence-of-beauty.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:14:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/952994-meizhibenzhi-essence-beauty-secret.html> (referer: https://www.nosetime.com/pinpai/10062809-meizhibenzhi-essence-of-beauty.html)
+2020-11-24 18:14:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/952994-meizhibenzhi-essence-beauty-secret.html> (referer: https://www.nosetime.com/pinpai/10062809-meizhibenzhi-essence-of-beauty.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:14:39 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 7 pages/min), scraped 0 items (at 0 items/min)
+2020-11-24 18:14:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/332785-meizhibenzhi-essence-beauty-wind-kissed.html> (referer: https://www.nosetime.com/pinpai/10062809-meizhibenzhi-essence-of-beauty.html)
+2020-11-24 18:14:45 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/332785-meizhibenzhi-essence-beauty-wind-kissed.html> (referer: https://www.nosetime.com/pinpai/10062809-meizhibenzhi-essence-of-beauty.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:14:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/pinpai/10041292-qiubite-cupid.html> (referer: https://www.nosetime.com/pinpai/4-c.html)
+2020-11-24 18:14:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:14:55 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /app/item.php?id=791411 HTTP/1.1" 200 None
+2020-11-24 18:14:55 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:14:56 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /xiangshui/791411-cupid-miv.html HTTP/1.1" 200 None
+2020-11-24 18:15:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/pinpai/10042740-cultus-artem.html> (referer: https://www.nosetime.com/pinpai/4-c.html)
+2020-11-24 18:15:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:15:05 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /app/item.php?id=855656 HTTP/1.1" 200 None
+2020-11-24 18:15:05 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:15:06 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /xiangshui/855656-ilex.html HTTP/1.1" 200 None
+2020-11-24 18:15:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/791411-cupid-miv.html> (referer: https://www.nosetime.com/pinpai/10041292-qiubite-cupid.html)
+2020-11-24 18:15:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/791411-cupid-miv.html> (referer: https://www.nosetime.com/pinpai/10041292-qiubite-cupid.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/855656-ilex.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+2020-11-24 18:15:19 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/855656-ilex.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:15:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/739012-tuberosa.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+2020-11-24 18:15:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/739012-tuberosa.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:15:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/852750-amara.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+2020-11-24 18:15:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/852750-amara.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:15:39 [scrapy.extensions.logstats] INFO: Crawled 28 pages (at 7 pages/min), scraped 0 items (at 0 items/min)
+2020-11-24 18:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/605545-rosa.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+2020-11-24 18:15:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/605545-rosa.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/844959-champaca.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+2020-11-24 18:15:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/844959-champaca.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/453662-vetiveria.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+2020-11-24 18:15:59 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/453662-vetiveria.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:16:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/750839-alba.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+2020-11-24 18:16:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/750839-alba.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:16:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/210037-poeticus.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+2020-11-24 18:16:15 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/210037-poeticus.html> (referer: https://www.nosetime.com/pinpai/10042740-cultus-artem.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:16:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/643996-cupid-mii.html> (referer: https://www.nosetime.com/pinpai/10041292-qiubite-cupid.html)
+2020-11-24 18:16:22 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/643996-cupid-mii.html> (referer: https://www.nosetime.com/pinpai/10041292-qiubite-cupid.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:16:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/951431-cupid-miii.html> (referer: https://www.nosetime.com/pinpai/10041292-qiubite-cupid.html)
+2020-11-24 18:16:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/951431-cupid-miii.html> (referer: https://www.nosetime.com/pinpai/10041292-qiubite-cupid.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:16:39 [scrapy.extensions.logstats] INFO: Crawled 35 pages (at 7 pages/min), scraped 0 items (at 0 items/min)
+2020-11-24 18:16:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/411615-cupid-mi.html> (referer: https://www.nosetime.com/pinpai/10041292-qiubite-cupid.html)
+2020-11-24 18:16:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/411615-cupid-mi.html> (referer: https://www.nosetime.com/pinpai/10041292-qiubite-cupid.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:16:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/807585-cupid-mvi.html> (referer: https://www.nosetime.com/pinpai/10041292-qiubite-cupid.html)
+2020-11-24 18:16:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/807585-cupid-mvi.html> (referer: https://www.nosetime.com/pinpai/10041292-qiubite-cupid.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:16:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/300652-cupid-mv.html> (referer: https://www.nosetime.com/pinpai/10041292-qiubite-cupid.html)
+2020-11-24 18:16:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/300652-cupid-mv.html> (referer: https://www.nosetime.com/pinpai/10041292-qiubite-cupid.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/pinpai/10037229-crusellas-company.html> (referer: https://www.nosetime.com/pinpai/4-c.html)
+2020-11-24 18:17:06 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:17:09 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /app/item.php?id=682597 HTTP/1.1" 200 None
+2020-11-24 18:17:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:17:10 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /xiangshui/682597-crusellas-company-colonia-bebitos-baby-cologne.html HTTP/1.1" 200 None
+2020-11-24 18:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/pinpai/10095855-keluo-crow.html> (referer: https://www.nosetime.com/pinpai/4-c.html)
+2020-11-24 18:17:16 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:17:19 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /app/item.php?id=463819 HTTP/1.1" 200 None
+2020-11-24 18:17:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.nosetime.com:443
+2020-11-24 18:17:21 [urllib3.connectionpool] DEBUG: https://www.nosetime.com:443 "GET /xiangshui/463819-keluo-crow-no-2-la-belle-dame.html HTTP/1.1" 200 None
+2020-11-24 18:17:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/682597-crusellas-company-colonia-bebitos-baby-cologne.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+2020-11-24 18:17:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/682597-crusellas-company-colonia-bebitos-baby-cologne.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:17:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/463819-keluo-crow-no-2-la-belle-dame.html> (referer: https://www.nosetime.com/pinpai/10095855-keluo-crow.html)
+2020-11-24 18:17:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/463819-keluo-crow-no-2-la-belle-dame.html> (referer: https://www.nosetime.com/pinpai/10095855-keluo-crow.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:17:39 [scrapy.extensions.logstats] INFO: Crawled 42 pages (at 7 pages/min), scraped 0 items (at 0 items/min)
+2020-11-24 18:17:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/276976-keluo-crow-no-4-paper-lantern.html> (referer: https://www.nosetime.com/pinpai/10095855-keluo-crow.html)
+2020-11-24 18:17:41 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/276976-keluo-crow-no-4-paper-lantern.html> (referer: https://www.nosetime.com/pinpai/10095855-keluo-crow.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:17:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/212357-keluo-crow-no-5-midnight-swim.html> (referer: https://www.nosetime.com/pinpai/10095855-keluo-crow.html)
+2020-11-24 18:17:49 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/212357-keluo-crow-no-5-midnight-swim.html> (referer: https://www.nosetime.com/pinpai/10095855-keluo-crow.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:17:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/713851-keluo-crow-no-1-fruta-leche.html> (referer: https://www.nosetime.com/pinpai/10095855-keluo-crow.html)
+2020-11-24 18:17:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/713851-keluo-crow-no-1-fruta-leche.html> (referer: https://www.nosetime.com/pinpai/10095855-keluo-crow.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:18:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/190001-keluo-crow-no-6-luna-azul.html> (referer: https://www.nosetime.com/pinpai/10095855-keluo-crow.html)
+2020-11-24 18:18:04 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/190001-keluo-crow-no-6-luna-azul.html> (referer: https://www.nosetime.com/pinpai/10095855-keluo-crow.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:18:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/493817-keluo-crow-3-enchanted-lily.html> (referer: https://www.nosetime.com/pinpai/10095855-keluo-crow.html)
+2020-11-24 18:18:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/493817-keluo-crow-3-enchanted-lily.html> (referer: https://www.nosetime.com/pinpai/10095855-keluo-crow.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:18:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/674822-crusellas-company-kananga.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+2020-11-24 18:18:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/674822-crusellas-company-kananga.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:18:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/265350-crusellas-company-naranja-orange.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+2020-11-24 18:18:25 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/265350-crusellas-company-naranja-orange.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:18:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/616437-crusellas-company-kolonia-1800-rosa.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+2020-11-24 18:18:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/616437-crusellas-company-kolonia-1800-rosa.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:18:39 [scrapy.extensions.logstats] INFO: Crawled 50 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2020-11-24 18:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/939836-crusellas-company-naranja-1800-orange-1800.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+2020-11-24 18:18:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/939836-crusellas-company-naranja-1800-orange-1800.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:18:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/229463-crusellas-company-kolonia-1800-lavanda.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+2020-11-24 18:18:53 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/229463-crusellas-company-kolonia-1800-lavanda.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:19:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/513191-crusellas-company-vencedor-conqueror.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+2020-11-24 18:19:00 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/513191-crusellas-company-vencedor-conqueror.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/853731-crusellas-company-rosa-rose.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+2020-11-24 18:19:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/853731-crusellas-company-rosa-rose.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:19:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nosetime.com/xiangshui/162431-crusellas-company-kolonia-1800-tabaco.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+2020-11-24 18:19:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nosetime.com/xiangshui/162431-crusellas-company-kolonia-1800-tabaco.html> (referer: https://www.nosetime.com/pinpai/10037229-crusellas-company.html)
+Traceback (most recent call last):
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\antoi\documents\programming\learning\datascience\scr_env\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\antoi\Documents\Programming\Learning\DataScience\nosetime_scraper\nosetime_scraper\spiders\nosetime_spider.py", line 28, in parse
+    perfume = pipeline.process_url(url, headers)
+UnboundLocalError: local variable 'url' referenced before assignment
+2020-11-24 18:19:15 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2020-11-24 18:19:15 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2020-11-24 18:19:15 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
